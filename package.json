@@ -1,0 +1,24 @@
+{
+  "name": "projet_test_api_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuel10-PG/Projet_Test_API_Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emmanuel10-PG/Projet_Test_API_Playwright/issues"
+  },
+  "homepage": "https://github.com/emmanuel10-PG/Projet_Test_API_Playwright#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4"
+  }
+}
