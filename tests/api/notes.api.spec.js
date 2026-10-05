@@ -43,4 +43,23 @@ test('login and enter into Dasboard with API', async ({ request }) => {
        const responseBodyGetNote = await ResponseGetNote.json();
        console.log(responseBodyGetNote);
 
-})
+       const ResponseModNote = await request.put(
+         "https://practice.expandtesting.com/notes/api/notes/6ac415f22d85510296084328",
+         {
+           headers: {
+             "X-Auth-Token": tokenLog,
+           },
+           data: {
+             title: "TEsR TTRT",
+             completed: false,
+             description: "Add T test note test",
+             category: "Home",
+           },
+
+         });
+
+         expect(ResponseModNote.ok()).toBeTruthy();
+         expect(ResponseModNote.status()).toBe(200);
+         console.log(ResponseModNote);
+
+});
